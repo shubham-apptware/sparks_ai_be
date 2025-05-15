@@ -2,3 +2,4 @@ flask
 gunicorn
 langchain
 langchain_openai
+python-dotenv
