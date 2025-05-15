@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from seo_generator import SEOGenerator
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 gen = SEOGenerator()
 
 @app.route('/getResponse', methods=['POST'])
