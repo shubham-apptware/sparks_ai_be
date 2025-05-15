@@ -79,11 +79,11 @@ class SEOGenerator:
         
         final_result = llm_with_tools.invoke(messages)
 
-        print("User input is as product features:", input)
-        print("SEO description for product:", final_result.content)
+        # print("User input is as product features:", input)
+        # print("SEO description for product:", final_result.content)
         return final_result.content
 
 
 
-obj=SEOGenerator()
-obj.generate_description({"title":"Tshirts", "features":["Solid", "Regular Fit", "Half Sleeve", "Band Collar", "Standard Length"]})
+# obj=SEOGenerator()
+# obj.generate_description({"title":"Tshirts", "features":["Solid", "Regular Fit", "Half Sleeve", "Band Collar", "Standard Length"]})
