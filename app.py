@@ -11,7 +11,7 @@ def add():
     data = request.get_json()
     if not data:
         return jsonify({"error": "No JSON payload received"}), 400
-    
+    print("REQ DATA IS ---", data)
     result = gen.generate_description(data)
     return jsonify(result), 200
 
